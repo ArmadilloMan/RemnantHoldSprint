@@ -75,7 +75,6 @@ class SprintState {
 	}
 	
 	resetStateAndSprint() {
-		SoundBeep 1000, 25
 		if (GetKeyState("LShift", "P") && (GetKeyState("w", "P") || GetKeyState("a", "P") || GetKeyState("d", "P"))
 		&& WinActive("ahk_exe Remnant-Win64-Shipping.exe")) {
 			this.resetState()
